@@ -1,0 +1,69 @@
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    font-size: 120%;
+}
+
+.biography-link:link {
+    color: darkolivegreen;
+}
+
+.biography-link:visited {
+    color: cornflowerblue;
+}
+
+.nowadays-link:link {
+    color: rgb(122, 6, 6);
+}
+
+.nowadays-link:visited {
+    color: rgb(36, 81, 21);
+}
+
+.friends-link:link {
+    color: rgb(10, 33, 76);
+}
+
+.friends-link:visited {
+    color: rgb(49, 94, 179);
+}
+
+.gallery-link:link {
+    color: rgb(0, 0, 0);
+}
+
+.gallery-link:visited {
+    color: rgb(22, 55, 115);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.main-links a {
+    text-align: center;
+    padding: 12px 6px;
+    border: 1px solid rgb(158, 158, 158);
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .main-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:767px) {
+    .main-links {
+        grid-template-columns: 1fr;
+    }
+}
